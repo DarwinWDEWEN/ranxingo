@@ -1,0 +1,13 @@
+Listen = "127.0.0.1:12333"
+MysqlDns = "rxai_admin:123456@tcp(0.0.0.0:33066)/rxai_admin?charset=utf8mb4&collation=utf8mb4_unicode_ci&parseTime=True&loc=Local"
+
+[Session]
+  SecretKey = "czyehq3ivunjhbntz78isj00i4hz2mt9xtddysfucxakadq4qbfrt0b7q3lnvg80" # 注意：这个是 JWT Token 授权密钥，生产环境请务必更换
+  MaxAge = 86400
+  SessionName = "session"
+
+[Redis] # redis 配置信息
+  Host = "127.0.0.1"
+  Port = 6379
+  Password = ""
+  DB = 2
